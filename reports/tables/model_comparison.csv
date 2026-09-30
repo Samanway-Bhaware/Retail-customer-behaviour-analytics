@@ -1,5 +1,5 @@
 model,roc_auc,pr_auc,brier,best_C,best_params
-Recency baseline,0.716,0.7688,0.3087,,
-Logistic regression,0.8016,0.8383,0.1765,0.01,
-XGBoost (uncalibrated),0.8095,0.8459,0.2434,,"{'max_depth': 3, 'learning_rate': 0.05, 'n_estimators': 200, 'scale_pos_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}"
-XGBoost (calibrated),0.8094,0.8418,0.1735,,"{'max_depth': 3, 'learning_rate': 0.05, 'n_estimators': 200, 'scale_pos_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}"
+Recency baseline,0.7177,0.7695,0.3074,,
+Logistic regression,0.803,0.839,0.176,0.01,
+XGBoost (uncalibrated),0.8106,0.8463,0.2403,,"{'max_depth': 3, 'learning_rate': 0.05, 'n_estimators': 200, 'scale_pos_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}"
+XGBoost (calibrated),0.8103,0.8423,0.1732,,"{'max_depth': 3, 'learning_rate': 0.05, 'n_estimators': 200, 'scale_pos_weight': 5, 'subsample': 0.8, 'colsample_bytree': 0.8}"

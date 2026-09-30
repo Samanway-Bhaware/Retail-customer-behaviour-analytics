@@ -17,7 +17,7 @@ help:  ## Show available targets
 all: m1 m2 m3 m4 m5 m6 m7 m8 m9  ## Run the full pipeline (requires data/)
 
 sample: SAMPLE_FLAG := --sample
-sample: m1 m2 m3 m4 m5 m6 m7 m8 m9  ## Run the full pipeline on a 5 %% customer sample
+sample: m1 m2 m3 m4 m5 m6 m7 m8 m9  ## Run the full pipeline on a 10 %% customer sample
 
 # ── Milestones ──────────────────────────────────────────────────────
 m0: ## M0  Scaffold (you are here)
@@ -49,7 +49,7 @@ m8: m6 ## M8  Opportunity sizing
 	$(PYTHON) src/sizing.py $(SAMPLE_FLAG)
 
 m9: m8 m7 ## M9  Memo, README, polish
-	@echo "Generate memo and README from results/."
+	$(PYTHON) src/memo.py
 	@echo "Run: make test  to verify."
 
 test: ## Run all tests

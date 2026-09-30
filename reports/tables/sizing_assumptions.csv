@@ -1,6 +1,6 @@
 Parameter,Value
 Target risk deciles,"(1,)"
 Target segments,"Champions, Loyal, Promising"
-Average value of retained target customer (Index),0.0032
+Average value of retained target customer (Index),0.0016
 Test window duration,12 weeks
 Intervention success,"See uplift scenarios (assumptions, not findings)"

@@ -5,7 +5,7 @@
 random_seed: 42
 
 # Sampling ──────────────────────────────────────────────────────────
-sample_fraction: 0.05          # 5 % of customers for --sample mode
+sample_fraction: 0.10          # 10 % of customers for --sample mode
 
 # Label / snapshot windows ─────────────────────────────────────────
 label_window_weeks: 12         # a customer is "lapsed" if no purchase

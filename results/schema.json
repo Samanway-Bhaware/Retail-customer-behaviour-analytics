@@ -62,12 +62,12 @@
   },
   "sample": {
     "enabled": true,
-    "fraction": 0.05,
-    "n_customers": 68557
+    "fraction": 0.1,
+    "n_customers": 136961
   },
   "parquet_counts": {
-    "transactions": 1599985,
-    "customers": 68557,
+    "transactions": 3187334,
+    "customers": 136961,
     "articles": 105542
   }
 }

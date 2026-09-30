@@ -7,24 +7,24 @@
     "train": {
       "T": "2020-01-14",
       "label_end": "2020-04-07",
-      "n_customers": 48537,
-      "n_lapsed": 30237,
-      "lapse_rate_pct": 62.3,
+      "n_customers": 97092,
+      "n_lapsed": 60604,
+      "lapse_rate_pct": 62.4,
       "n_features": 26
     },
     "val": {
       "T": "2020-04-07",
       "label_end": "2020-06-30",
-      "n_customers": 48231,
-      "n_lapsed": 28097,
-      "lapse_rate_pct": 58.3,
+      "n_customers": 96513,
+      "n_lapsed": 56196,
+      "lapse_rate_pct": 58.2,
       "n_features": 26
     },
     "test": {
       "T": "2020-06-30",
       "label_end": "2020-09-22",
-      "n_customers": 49317,
-      "n_lapsed": 29168,
+      "n_customers": 98662,
+      "n_lapsed": 58279,
       "lapse_rate_pct": 59.1,
       "n_features": 26
     }
@@ -33,7 +33,7 @@
     "median": 22,
     "p75": 58,
     "p90": 124,
-    "p95": 188,
+    "p95": 187,
     "mean": 48.2
   }
 }
