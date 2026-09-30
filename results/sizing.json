@@ -1,0 +1,50 @@
+{
+  "n_target_customers": 554,
+  "value_lost_index": 1.15,
+  "total_revenue_index": 100,
+  "scenarios": [
+    {
+      "Assumed_Uplift_pp": 2,
+      "Customers_Saved": 11,
+      "Revenue_Recovered_Index": 0.04,
+      "Share_of_Total_Revenue_pct": 0.036,
+      "Break_Even_Cost_pct_of_LTV": 2.0
+    },
+    {
+      "Assumed_Uplift_pp": 5,
+      "Customers_Saved": 27,
+      "Revenue_Recovered_Index": 0.09,
+      "Share_of_Total_Revenue_pct": 0.09,
+      "Break_Even_Cost_pct_of_LTV": 5.0
+    },
+    {
+      "Assumed_Uplift_pp": 10,
+      "Customers_Saved": 55,
+      "Revenue_Recovered_Index": 0.18,
+      "Share_of_Total_Revenue_pct": 0.18,
+      "Break_Even_Cost_pct_of_LTV": 10.0
+    }
+  ],
+  "assumptions": [
+    {
+      "Parameter": "Target risk deciles",
+      "Value": "(1,)"
+    },
+    {
+      "Parameter": "Target segments",
+      "Value": "Champions, Loyal, Promising"
+    },
+    {
+      "Parameter": "Average value of retained target customer (Index)",
+      "Value": "0.0032"
+    },
+    {
+      "Parameter": "Test window duration",
+      "Value": "12 weeks"
+    },
+    {
+      "Parameter": "Intervention success",
+      "Value": "See uplift scenarios (assumptions, not findings)"
+    }
+  ]
+}

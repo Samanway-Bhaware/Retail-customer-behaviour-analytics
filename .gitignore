@@ -1,0 +1,39 @@
+# Raw data — not committed (see data/README.md for download steps)
+data/*.csv
+data/*.parquet
+data/*.csv.gz
+data/images/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Keep results and reports tracked
+!results/.gitkeep
+!reports/figures/.gitkeep
+!reports/tables/.gitkeep

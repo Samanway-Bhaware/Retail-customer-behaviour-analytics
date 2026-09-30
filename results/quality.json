@@ -1,0 +1,91 @@
+{
+  "starting_counts": {
+    "transactions": 1599985,
+    "customers": 68557,
+    "articles": 105542
+  },
+  "total_rows_flagged_or_cleaned": 464,
+  "checks": [
+    {
+      "check": "Duplicate transaction rows (all columns identical)",
+      "count": 149963,
+      "treatment": "Kept \u2014 a customer can buy the same article at the same price multiple times on the same day",
+      "rows_affected": 0
+    },
+    {
+      "check": "Missing age",
+      "count": 789,
+      "pct": 1.15,
+      "treatment": "Kept as NULL \u2014 not imputed; model will use indicator for missing age",
+      "rows_affected": 0
+    },
+    {
+      "check": "Implausible age (< 15 or > 100)",
+      "count": 0,
+      "detail": "Under 15: 0, Over 100: 0, Range: [16, 99]",
+      "treatment": "Ages outside [15, 100] set to NULL \u2014 likely data entry errors",
+      "rows_affected": 0
+    },
+    {
+      "check": "Customers with no transactions",
+      "count": 464,
+      "pct": 0.68,
+      "treatment": "Excluded from analysis \u2014 no purchase history to analyse",
+      "rows_affected": 464
+    },
+    {
+      "check": "Transactions with unknown customer_id (not in customers table)",
+      "count": 0,
+      "treatment": "Kept \u2014 customer metadata will be NULL for these; they can still contribute to descriptives",
+      "rows_affected": 0
+    },
+    {
+      "check": "Transactions with unknown article_id (not in articles table)",
+      "count": 0,
+      "treatment": "Kept \u2014 article metadata will be NULL for these; price and date are still valid",
+      "rows_affected": 0
+    },
+    {
+      "check": "Price: null or non-positive",
+      "count": 0,
+      "detail": "NULL: 0, \u2264 0: 0",
+      "treatment": "Kept \u2014 prices are anonymised/normalised; non-positive values flagged but not removed",
+      "rows_affected": 0
+    },
+    {
+      "check": "Price distribution",
+      "count": 1599985,
+      "detail": "min=0.0001, p25=0.0158, p50=0.0254, p75=0.0339, p99=0.0950, max=0.5915, mean=0.0278",
+      "treatment": "No outlier removal \u2014 prices are anonymised and we cannot judge what is 'too high'",
+      "rows_affected": 0
+    },
+    {
+      "check": "Single-purchase customers",
+      "count": 6623,
+      "pct": 9.73,
+      "treatment": "Kept \u2014 included in descriptives and segmentation; will naturally appear in 'Lapsed' segment",
+      "rows_affected": 0
+    },
+    {
+      "check": "Date gaps (days with no transactions)",
+      "count": 0,
+      "detail": "Max gap: 1 days (around None)",
+      "treatment": "No action \u2014 gaps are expected (e.g. holidays, data collection artefacts)",
+      "rows_affected": 0
+    },
+    {
+      "check": "Sales channel distribution",
+      "count": 2,
+      "detail": "channel 1: 474,958 (29.7%); channel 2: 1,125,027 (70.3%)",
+      "treatment": "No action \u2014 used as a feature (online vs store)",
+      "rows_affected": 0
+    },
+    {
+      "check": "Club member status distribution",
+      "count": 4,
+      "detail": "ACTIVE: 63,581 (92.7%); PRE-CREATE: 4,635 (6.8%); None: 308 (0.5%); LEFT CLUB: 33 (0.1%)",
+      "treatment": "NULL/missing values kept as a separate category for features",
+      "rows_affected": 0
+    }
+  ]
+}

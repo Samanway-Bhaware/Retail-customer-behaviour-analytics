@@ -1,0 +1,73 @@
+{
+  "transactions": {
+    "file": "transactions_train.csv",
+    "columns": {
+      "t_dat": "DATE",
+      "customer_id": "VARCHAR",
+      "article_id": "VARCHAR",
+      "price": "DOUBLE",
+      "sales_channel_id": "BIGINT"
+    },
+    "row_count": 31788324,
+    "min_date": "2018-09-20",
+    "max_date": "2020-09-22",
+    "distinct_customers": 1362281,
+    "distinct_articles": 104547
+  },
+  "customers": {
+    "file": "customers.csv",
+    "columns": {
+      "customer_id": "VARCHAR",
+      "FN": "DOUBLE",
+      "Active": "DOUBLE",
+      "club_member_status": "VARCHAR",
+      "fashion_news_frequency": "VARCHAR",
+      "age": "BIGINT",
+      "postal_code": "VARCHAR"
+    },
+    "row_count": 1371980,
+    "distinct_customers": 1371980
+  },
+  "articles": {
+    "file": "articles.csv",
+    "columns": {
+      "article_id": "VARCHAR",
+      "product_code": "VARCHAR",
+      "prod_name": "VARCHAR",
+      "product_type_no": "BIGINT",
+      "product_type_name": "VARCHAR",
+      "product_group_name": "VARCHAR",
+      "graphical_appearance_no": "BIGINT",
+      "graphical_appearance_name": "VARCHAR",
+      "colour_group_code": "VARCHAR",
+      "colour_group_name": "VARCHAR",
+      "perceived_colour_value_id": "BIGINT",
+      "perceived_colour_value_name": "VARCHAR",
+      "perceived_colour_master_id": "BIGINT",
+      "perceived_colour_master_name": "VARCHAR",
+      "department_no": "BIGINT",
+      "department_name": "VARCHAR",
+      "index_code": "VARCHAR",
+      "index_name": "VARCHAR",
+      "index_group_no": "BIGINT",
+      "index_group_name": "VARCHAR",
+      "section_no": "BIGINT",
+      "section_name": "VARCHAR",
+      "garment_group_no": "BIGINT",
+      "garment_group_name": "VARCHAR",
+      "detail_desc": "VARCHAR"
+    },
+    "row_count": 105542,
+    "distinct_articles": 105542
+  },
+  "sample": {
+    "enabled": true,
+    "fraction": 0.05,
+    "n_customers": 68557
+  },
+  "parquet_counts": {
+    "transactions": 1599985,
+    "customers": 68557,
+    "articles": 105542
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "reference_date": "2020-09-22",
+  "total_customers": 68093,
+  "segments": {
+    "Champions": {
+      "n_customers": 16710,
+      "customer_share_pct": 24.5,
+      "revenue_share_pct": 66.3,
+      "avg_recency_days": 35.5,
+      "avg_frequency": 17.5,
+      "avg_monetary_index": 270.1
+    },
+    "Loyal": {
+      "n_customers": 12006,
+      "customer_share_pct": 17.6,
+      "revenue_share_pct": 16.7,
+      "avg_recency_days": 108.7,
+      "avg_frequency": 6.5,
+      "avg_monetary_index": 95.0
+    },
+    "At_risk": {
+      "n_customers": 6914,
+      "customer_share_pct": 10.2,
+      "revenue_share_pct": 8.8,
+      "avg_recency_days": 384.8,
+      "avg_frequency": 5.3,
+      "avg_monetary_index": 86.9
+    },
+    "Lapsed": {
+      "n_customers": 17233,
+      "customer_share_pct": 25.3,
+      "revenue_share_pct": 3.6,
+      "avg_recency_days": 510.5,
+      "avg_frequency": 1.1,
+      "avg_monetary_index": 14.2
+    },
+    "Other": {
+      "n_customers": 6228,
+      "customer_share_pct": 9.1,
+      "revenue_share_pct": 2.6,
+      "avg_recency_days": 269.6,
+      "avg_frequency": 2.6,
+      "avg_monetary_index": 28.2
+    },
+    "Promising": {
+      "n_customers": 9002,
+      "customer_share_pct": 13.2,
+      "revenue_share_pct": 2.0,
+      "avg_recency_days": 109.5,
+      "avg_frequency": 1.2,
+      "avg_monetary_index": 15.1
+    }
+  },
+  "quintile_boundaries": {
+    "recency_days": {
+      "min": {
+        "1": 460,
+        "2": 230,
+        "3": 96,
+        "4": 36,
+        "5": 0
+      },
+      "max": {
+        "1": 733,
+        "2": 459,
+        "3": 229,
+        "4": 95,
+        "5": 35
+      }
+    },
+    "frequency": {
+      "min": {
+        "1": 1,
+        "2": 1,
+        "3": 2,
+        "4": 4,
+        "5": 10
+      },
+      "max": {
+        "1": 1,
+        "2": 2,
+        "3": 4,
+        "4": 10,
+        "5": 188
+      }
+    }
+  }
+}

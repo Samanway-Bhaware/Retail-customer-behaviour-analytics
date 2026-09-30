@@ -1,0 +1,194 @@
+{
+  "models": [
+    {
+      "model": "Recency baseline",
+      "roc_auc": 0.716,
+      "pr_auc": 0.7688,
+      "brier": 0.3087
+    },
+    {
+      "model": "Logistic regression",
+      "roc_auc": 0.8016,
+      "pr_auc": 0.8383,
+      "brier": 0.1765,
+      "best_C": 0.01
+    },
+    {
+      "model": "XGBoost (uncalibrated)",
+      "roc_auc": 0.8095,
+      "pr_auc": 0.8459,
+      "brier": 0.2434,
+      "best_params": {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "n_estimators": 200,
+        "scale_pos_weight": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    },
+    {
+      "model": "XGBoost (calibrated)",
+      "roc_auc": 0.8094,
+      "pr_auc": 0.8418,
+      "brier": 0.1735,
+      "best_params": {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "n_estimators": 200,
+        "scale_pos_weight": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      }
+    }
+  ],
+  "best_model": "XGBoost (calibrated)",
+  "best_params": {
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "n_estimators": 200,
+    "scale_pos_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "top_decile_capture_pct": 13.7,
+  "top_3_decile_capture_pct": 43.0,
+  "test_snapshot_used_once": true,
+  "n_features": 25,
+  "feature_names": [
+    "txn_count_all",
+    "spend_all",
+    "active_days_all",
+    "recency_days",
+    "tenure_days",
+    "txn_count_4w",
+    "spend_4w",
+    "active_days_4w",
+    "txn_count_12w",
+    "spend_12w",
+    "active_days_12w",
+    "txn_count_26w",
+    "spend_26w",
+    "active_days_26w",
+    "avg_item_price",
+    "n_purchase_days",
+    "online_share",
+    "n_distinct_articles",
+    "avg_gap_days",
+    "max_gap_days",
+    "min_gap_days",
+    "avg_basket_size",
+    "age",
+    "is_club_active",
+    "news_regular"
+  ],
+  "shap_top_drivers": [
+    "active_days_all",
+    "recency_days",
+    "active_days_26w",
+    "n_purchase_days",
+    "max_gap_days"
+  ],
+  "lift_by_decile": [
+    {
+      "decile": 1,
+      "n_customers": 4301,
+      "n_lapsed": 4009,
+      "avg_prob": 0.9000961780548096,
+      "lapse_rate_pct": 93.2,
+      "capture_pct": 13.7,
+      "cum_capture_pct": 13.7,
+      "lift": 1.58
+    },
+    {
+      "decile": 2,
+      "n_customers": 4685,
+      "n_lapsed": 4185,
+      "avg_prob": 0.8600693345069885,
+      "lapse_rate_pct": 89.3,
+      "capture_pct": 14.3,
+      "cum_capture_pct": 28.0,
+      "lift": 1.51
+    },
+    {
+      "decile": 3,
+      "n_customers": 5294,
+      "n_lapsed": 4375,
+      "avg_prob": 0.7884417772293091,
+      "lapse_rate_pct": 82.6,
+      "capture_pct": 15.0,
+      "cum_capture_pct": 43.0,
+      "lift": 1.4
+    },
+    {
+      "decile": 4,
+      "n_customers": 5447,
+      "n_lapsed": 4132,
+      "avg_prob": 0.7171381711959839,
+      "lapse_rate_pct": 75.9,
+      "capture_pct": 14.2,
+      "cum_capture_pct": 57.2,
+      "lift": 1.28
+    },
+    {
+      "decile": 5,
+      "n_customers": 4610,
+      "n_lapsed": 3204,
+      "avg_prob": 0.6408944725990295,
+      "lapse_rate_pct": 69.5,
+      "capture_pct": 11.0,
+      "cum_capture_pct": 68.2,
+      "lift": 1.18
+    },
+    {
+      "decile": 6,
+      "n_customers": 4876,
+      "n_lapsed": 2917,
+      "avg_prob": 0.5631318092346191,
+      "lapse_rate_pct": 59.8,
+      "capture_pct": 10.0,
+      "cum_capture_pct": 78.2,
+      "lift": 1.01
+    },
+    {
+      "decile": 7,
+      "n_customers": 4803,
+      "n_lapsed": 2393,
+      "avg_prob": 0.49292901158332825,
+      "lapse_rate_pct": 49.8,
+      "capture_pct": 8.2,
+      "cum_capture_pct": 86.4,
+      "lift": 0.84
+    },
+    {
+      "decile": 8,
+      "n_customers": 4144,
+      "n_lapsed": 1687,
+      "avg_prob": 0.39154717326164246,
+      "lapse_rate_pct": 40.7,
+      "capture_pct": 5.8,
+      "cum_capture_pct": 92.2,
+      "lift": 0.69
+    },
+    {
+      "decile": 9,
+      "n_customers": 6192,
+      "n_lapsed": 1740,
+      "avg_prob": 0.27241453528404236,
+      "lapse_rate_pct": 28.1,
+      "capture_pct": 6.0,
+      "cum_capture_pct": 98.2,
+      "lift": 0.48
+    },
+    {
+      "decile": 10,
+      "n_customers": 4965,
+      "n_lapsed": 526,
+      "avg_prob": 0.09081503003835678,
+      "lapse_rate_pct": 10.6,
+      "capture_pct": 1.8,
+      "cum_capture_pct": 100.0,
+      "lift": 0.18
+    }
+  ]
+}

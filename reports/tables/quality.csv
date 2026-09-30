@@ -1,0 +1,13 @@
+Check,Count,Percentage,Detail,Treatment,Rows affected
+Duplicate transaction rows (all columns identical),149963,,,Kept — a customer can buy the same article at the same price multiple times on the same day,0
+Missing age,789,1.15,,Kept as NULL — not imputed; model will use indicator for missing age,0
+Implausible age (< 15 or > 100),0,,"Under 15: 0, Over 100: 0, Range: [16, 99]","Ages outside [15, 100] set to NULL — likely data entry errors",0
+Customers with no transactions,464,0.68,,Excluded from analysis — no purchase history to analyse,464
+Transactions with unknown customer_id (not in customers table),0,,,Kept — customer metadata will be NULL for these; they can still contribute to descriptives,0
+Transactions with unknown article_id (not in articles table),0,,,Kept — article metadata will be NULL for these; price and date are still valid,0
+Price: null or non-positive,0,,"NULL: 0, ≤ 0: 0",Kept — prices are anonymised/normalised; non-positive values flagged but not removed,0
+Price distribution,1599985,,"min=0.0001, p25=0.0158, p50=0.0254, p75=0.0339, p99=0.0950, max=0.5915, mean=0.0278",No outlier removal — prices are anonymised and we cannot judge what is 'too high',0
+Single-purchase customers,6623,9.73,,Kept — included in descriptives and segmentation; will naturally appear in 'Lapsed' segment,0
+Date gaps (days with no transactions),0,,Max gap: 1 days (around None),"No action — gaps are expected (e.g. holidays, data collection artefacts)",0
+Sales channel distribution,2,,"channel 1: 474,958 (29.7%); channel 2: 1,125,027 (70.3%)",No action — used as a feature (online vs store),0
+Club member status distribution,4,,"ACTIVE: 63,581 (92.7%); PRE-CREATE: 4,635 (6.8%); None: 308 (0.5%); LEFT CLUB: 33 (0.1%)",NULL/missing values kept as a separate category for features,0

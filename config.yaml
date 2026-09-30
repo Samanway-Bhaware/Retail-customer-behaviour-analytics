@@ -1,0 +1,70 @@
+# ── Project Configuration ──────────────────────────────────────────
+# Every tunable parameter lives here so that results are reproducible
+# and decisions are auditable.
+
+random_seed: 42
+
+# Sampling ──────────────────────────────────────────────────────────
+sample_fraction: 0.05          # 5 % of customers for --sample mode
+
+# Label / snapshot windows ─────────────────────────────────────────
+label_window_weeks: 12         # a customer is "lapsed" if no purchase
+                               # in [T, T + label_window)
+snapshot_spacing_weeks: 12     # gap between T_train, T_val, T_test
+lookback_weeks: 52             # population: ≥1 purchase in this window
+
+# Feature trailing windows (weeks) ────────────────────────────────
+feature_windows_weeks: [4, 12, 26]
+
+# RFM segmentation ────────────────────────────────────────────────
+rfm:
+  n_quantiles: 5               # quintile scoring
+  segments:
+    Champions:
+      recency_q: [4, 5]        # quintile values (5 = most recent)
+      frequency_q: [4, 5]
+      monetary_q: [4, 5]
+    Loyal:
+      recency_q: [3, 4, 5]
+      frequency_q: [3, 4, 5]
+      monetary_q: [3, 4, 5]
+    Promising:
+      recency_q: [3, 4, 5]
+      frequency_q: [1, 2]
+      monetary_q: [1, 2, 3]
+    At_risk:
+      recency_q: [1, 2]
+      frequency_q: [3, 4, 5]
+      monetary_q: [3, 4, 5]
+    Lapsed:
+      recency_q: [1, 2]
+      frequency_q: [1, 2]
+      monetary_q: [1, 2, 3]
+
+# Basket-affinity analysis ────────────────────────────────────────
+affinity:
+  min_support: 0.005           # minimum fraction of baskets
+  min_pair_count: 50           # absolute floor
+  top_n_pairs: 20
+
+# Model tuning ────────────────────────────────────────────────────
+model:
+  xgb_param_grid:
+    max_depth: [3, 5, 7]
+    learning_rate: [0.05, 0.1]
+    n_estimators: [200, 400]
+    scale_pos_weight: [1, 3, 5]
+    subsample: [0.8]
+    colsample_bytree: [0.8]
+  logistic_C: [0.01, 0.1, 1.0, 10.0]
+
+# Opportunity sizing scenarios ────────────────────────────────────
+sizing:
+  target_deciles: [1]          # top-risk decile(s)
+  retention_uplift_pp: [2, 5, 10]   # percentage-point assumptions
+  revenue_index_base: 100      # base for indexing
+
+# Revenue index reference ─────────────────────────────────────────
+revenue_index:
+  reference: "total test-window revenue"
+  base: 100

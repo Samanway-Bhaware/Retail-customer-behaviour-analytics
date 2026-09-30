@@ -1,0 +1,9 @@
+{
+  "avg_retention_month_3": 16.4,
+  "avg_retention_month_6": 15.9,
+  "n_cohorts": 20,
+  "channel_retention_month_6": {
+    "channel_1": 22.8,
+    "channel_2": 16.8
+  }
+}
