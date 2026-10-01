@@ -76,6 +76,12 @@ The models were evaluated on the out-of-time test snapshot (T=2020-06-30):
 
 ![SHAP Summary](reports/figures/shap_summary.png)
 
+### Prototyping vs. Production Scaling
+A core objective of this project was demonstrating scalable data workflows. The initial pipeline was prototyped on a 5% random sample of the 31 million row dataset, running entirely locally. When deployed to a cloud environment on the full 100% dataset:
+* **The strategic insights held true:** The "Champions" segment revenue concentration was identical (66.3% on the 5% sample vs 66.3% on 100% data).
+* **The model robustly scaled:** Top-decile precision remained extremely stable (93.2% vs 92.7%) while absolute capture rates improved (13.7% -> 14.9%) as XGBoost learned better patterns from the full 1.37M customer dataset.
+* **The target impact grew perfectly:** The absolute sizing of the target intervention group scaled ~25x from 554 customers to 14,271 customers.
+
 ### Opportunity Sizing
 Based on the high-value, high-risk target group (14,271 customers), the expected value lost is **1.57 index points** per quarter (where total quarterly revenue = 100).
 
