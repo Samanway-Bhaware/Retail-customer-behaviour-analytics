@@ -1,13 +1,13 @@
 Check,Count,Percentage,Detail,Treatment,Rows affected
-Duplicate transaction rows (all columns identical),299319,,,Kept — a customer can buy the same article at the same price multiple times on the same day,0
-Missing age,1549,1.13,,Kept as NULL — not imputed; model will use indicator for missing age,0
+Duplicate transaction rows (all columns identical),2974905,,,Kept — a customer can buy the same article at the same price multiple times on the same day,0
+Missing age,15861,1.16,,Kept as NULL — not imputed; model will use indicator for missing age,0
 Implausible age (< 15 or > 100),0,,"Under 15: 0, Over 100: 0, Range: [16, 99]","Ages outside [15, 100] set to NULL — likely data entry errors",0
-Customers with no transactions,971,0.71,,Excluded from analysis — no purchase history to analyse,971
+Customers with no transactions,9699,0.71,,Excluded from analysis — no purchase history to analyse,9699
 Transactions with unknown customer_id (not in customers table),0,,,Kept — customer metadata will be NULL for these; they can still contribute to descriptives,0
 Transactions with unknown article_id (not in articles table),0,,,Kept — article metadata will be NULL for these; price and date are still valid,0
 Price: null or non-positive,0,,"NULL: 0, ≤ 0: 0",Kept — prices are anonymised/normalised; non-positive values flagged but not removed,0
-Price distribution,3187334,,"min=0.0001, p25=0.0158, p50=0.0254, p75=0.0339, p99=0.0961, max=0.5915, mean=0.0278",No outlier removal — prices are anonymised and we cannot judge what is 'too high',0
-Single-purchase customers,13288,9.77,,Kept — included in descriptives and segmentation; will naturally appear in 'Lapsed' segment,0
+Price distribution,31788324,,"min=0.0000, p25=0.0159, p50=0.0254, p75=0.0339, p99=0.0956, max=0.5915, mean=0.0278",No outlier removal — prices are anonymised and we cannot judge what is 'too high',0
+Single-purchase customers,131514,9.65,,Kept — included in descriptives and segmentation; will naturally appear in 'Lapsed' segment,0
 Date gaps (days with no transactions),0,,Max gap: 1 days (around None),"No action — gaps are expected (e.g. holidays, data collection artefacts)",0
-Sales channel distribution,2,,"channel 1: 940,088 (29.5%); channel 2: 2,247,246 (70.5%)",No action — used as a feature (online vs store),0
-Club member status distribution,4,,"ACTIVE: 127,034 (92.8%); PRE-CREATE: 9,283 (6.8%); None: 591 (0.4%); LEFT CLUB: 53 (0.0%)",NULL/missing values kept as a separate category for features,0
+Sales channel distribution,2,,"channel 1: 9,408,462 (29.6%); channel 2: 22,379,862 (70.4%)",No action — used as a feature (online vs store),0
+Club member status distribution,4,,"ACTIVE: 1,272,491 (92.8%); PRE-CREATE: 92,960 (6.8%); None: 6,062 (0.4%); LEFT CLUB: 467 (0.0%)",NULL/missing values kept as a separate category for features,0

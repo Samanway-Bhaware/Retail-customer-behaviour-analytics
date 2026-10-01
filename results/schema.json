@@ -61,13 +61,11 @@
     "distinct_articles": 105542
   },
   "sample": {
-    "enabled": true,
-    "fraction": 0.1,
-    "n_customers": 136961
+    "enabled": false
   },
   "parquet_counts": {
-    "transactions": 3187334,
-    "customers": 136961,
+    "transactions": 31788324,
+    "customers": 1371980,
     "articles": 105542
   }
 }

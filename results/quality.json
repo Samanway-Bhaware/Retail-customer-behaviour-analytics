@@ -1,21 +1,21 @@
 {
   "starting_counts": {
-    "transactions": 3187334,
-    "customers": 136961,
+    "transactions": 31788324,
+    "customers": 1371980,
     "articles": 105542
   },
-  "total_rows_flagged_or_cleaned": 971,
+  "total_rows_flagged_or_cleaned": 9699,
   "checks": [
     {
       "check": "Duplicate transaction rows (all columns identical)",
-      "count": 299319,
+      "count": 2974905,
       "treatment": "Kept \u2014 a customer can buy the same article at the same price multiple times on the same day",
       "rows_affected": 0
     },
     {
       "check": "Missing age",
-      "count": 1549,
-      "pct": 1.13,
+      "count": 15861,
+      "pct": 1.16,
       "treatment": "Kept as NULL \u2014 not imputed; model will use indicator for missing age",
       "rows_affected": 0
     },
@@ -28,10 +28,10 @@
     },
     {
       "check": "Customers with no transactions",
-      "count": 971,
+      "count": 9699,
       "pct": 0.71,
       "treatment": "Excluded from analysis \u2014 no purchase history to analyse",
-      "rows_affected": 971
+      "rows_affected": 9699
     },
     {
       "check": "Transactions with unknown customer_id (not in customers table)",
@@ -54,15 +54,15 @@
     },
     {
       "check": "Price distribution",
-      "count": 3187334,
-      "detail": "min=0.0001, p25=0.0158, p50=0.0254, p75=0.0339, p99=0.0961, max=0.5915, mean=0.0278",
+      "count": 31788324,
+      "detail": "min=0.0000, p25=0.0159, p50=0.0254, p75=0.0339, p99=0.0956, max=0.5915, mean=0.0278",
       "treatment": "No outlier removal \u2014 prices are anonymised and we cannot judge what is 'too high'",
       "rows_affected": 0
     },
     {
       "check": "Single-purchase customers",
-      "count": 13288,
-      "pct": 9.77,
+      "count": 131514,
+      "pct": 9.65,
       "treatment": "Kept \u2014 included in descriptives and segmentation; will naturally appear in 'Lapsed' segment",
       "rows_affected": 0
     },
@@ -76,14 +76,14 @@
     {
       "check": "Sales channel distribution",
       "count": 2,
-      "detail": "channel 1: 940,088 (29.5%); channel 2: 2,247,246 (70.5%)",
+      "detail": "channel 1: 9,408,462 (29.6%); channel 2: 22,379,862 (70.4%)",
       "treatment": "No action \u2014 used as a feature (online vs store)",
       "rows_affected": 0
     },
     {
       "check": "Club member status distribution",
       "count": 4,
-      "detail": "ACTIVE: 127,034 (92.8%); PRE-CREATE: 9,283 (6.8%); None: 591 (0.4%); LEFT CLUB: 53 (0.0%)",
+      "detail": "ACTIVE: 1,272,491 (92.8%); PRE-CREATE: 92,960 (6.8%); None: 6,062 (0.4%); LEFT CLUB: 467 (0.0%)",
       "treatment": "NULL/missing values kept as a separate category for features",
       "rows_affected": 0
     }

@@ -1,52 +1,52 @@
 {
   "reference_date": "2020-09-22",
-  "total_customers": 135990,
+  "total_customers": 1362281,
   "segments": {
     "Champions": {
-      "n_customers": 33362,
-      "customer_share_pct": 24.5,
-      "revenue_share_pct": 66.4,
+      "n_customers": 334974,
+      "customer_share_pct": 24.6,
+      "revenue_share_pct": 66.3,
       "avg_recency_days": 35.5,
-      "avg_frequency": 17.6,
-      "avg_monetary_index": 270.5
+      "avg_frequency": 17.5,
+      "avg_monetary_index": 269.7
     },
     "Loyal": {
-      "n_customers": 23939,
+      "n_customers": 240400,
       "customer_share_pct": 17.6,
-      "revenue_share_pct": 16.7,
-      "avg_recency_days": 108.8,
+      "revenue_share_pct": 16.9,
+      "avg_recency_days": 107.9,
       "avg_frequency": 6.4,
-      "avg_monetary_index": 94.8
+      "avg_monetary_index": 95.6
     },
     "At_risk": {
-      "n_customers": 13770,
+      "n_customers": 137901,
       "customer_share_pct": 10.1,
-      "revenue_share_pct": 8.8,
-      "avg_recency_days": 386.0,
+      "revenue_share_pct": 8.6,
+      "avg_recency_days": 385.9,
       "avg_frequency": 5.3,
-      "avg_monetary_index": 86.6
+      "avg_monetary_index": 85.3
     },
     "Lapsed": {
-      "n_customers": 34280,
-      "customer_share_pct": 25.2,
+      "n_customers": 345599,
+      "customer_share_pct": 25.4,
       "revenue_share_pct": 3.6,
-      "avg_recency_days": 510.0,
+      "avg_recency_days": 509.5,
       "avg_frequency": 1.1,
-      "avg_monetary_index": 14.2
+      "avg_monetary_index": 14.3
     },
     "Other": {
-      "n_customers": 12528,
-      "customer_share_pct": 9.2,
+      "n_customers": 123984,
+      "customer_share_pct": 9.1,
       "revenue_share_pct": 2.6,
-      "avg_recency_days": 272.9,
+      "avg_recency_days": 270.7,
       "avg_frequency": 2.6,
-      "avg_monetary_index": 27.9
+      "avg_monetary_index": 28.1
     },
     "Promising": {
-      "n_customers": 18111,
-      "customer_share_pct": 13.3,
+      "n_customers": 179423,
+      "customer_share_pct": 13.2,
       "revenue_share_pct": 2.0,
-      "avg_recency_days": 109.6,
+      "avg_recency_days": 109.5,
       "avg_frequency": 1.2,
       "avg_monetary_index": 15.2
     }
@@ -57,7 +57,7 @@
         "1": 460,
         "2": 231,
         "3": 96,
-        "4": 36,
+        "4": 35,
         "5": 0
       },
       "max": {
@@ -65,7 +65,7 @@
         "2": 459,
         "3": 230,
         "4": 95,
-        "5": 35
+        "5": 34
       }
     },
     "frequency": {
@@ -81,7 +81,7 @@
         "2": 2,
         "3": 4,
         "4": 10,
-        "5": 391
+        "5": 427
       }
     }
   }

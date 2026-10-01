@@ -1,186 +1,186 @@
 {
-  "n_baskets": 906143,
+  "n_baskets": 9080179,
   "min_support": 0.005,
   "top_pairs": [
     {
       "item_A": "Bikini top",
       "item_B": "Swimwear bottom",
-      "pair_count": 46738,
-      "support_pct": 5.157905540295516,
-      "confidence_A_to_B_pct": 78.11669535859338,
-      "confidence_B_to_A_pct": 78.98534804725128,
-      "lift": 11.962364031284855
+      "pair_count": 463018,
+      "support_pct": 5.09921665641173,
+      "confidence_A_to_B_pct": 78.19097106708794,
+      "confidence_B_to_A_pct": 78.97045630528143,
+      "lift": 12.109265167929001
+    },
+    {
+      "item_A": "Bra",
+      "item_B": "Underwear bottom",
+      "pair_count": 262678,
+      "support_pct": 2.8928724863243334,
+      "confidence_A_to_B_pct": 32.586037072047596,
+      "confidence_B_to_A_pct": 41.60583132308755,
+      "lift": 4.686584591324737
     },
     {
       "item_A": "Bikini top",
       "item_B": "Swimsuit",
-      "pair_count": 5551,
-      "support_pct": 0.6125964665621211,
-      "confidence_A_to_B_pct": 9.277799134228076,
-      "confidence_B_to_A_pct": 30.57054741711643,
-      "lift": 4.6299222055770635
+      "pair_count": 53930,
+      "support_pct": 0.5939310227254331,
+      "confidence_A_to_B_pct": 9.107289715838375,
+      "confidence_B_to_A_pct": 29.911424910842545,
+      "lift": 4.586593426734013
     },
     {
       "item_A": "Swimsuit",
       "item_B": "Swimwear bottom",
-      "pair_count": 5447,
-      "support_pct": 0.601119249389997,
-      "confidence_A_to_B_pct": 29.997797114219633,
-      "confidence_B_to_A_pct": 9.205211836479476,
-      "lift": 4.5936987934480795
-    },
-    {
-      "item_A": "Bra",
-      "item_B": "Underwear bottom",
-      "pair_count": 25962,
-      "support_pct": 2.865110694448889,
-      "confidence_A_to_B_pct": 31.95362404460362,
-      "confidence_B_to_A_pct": 41.00450130300876,
-      "lift": 4.573095277998778
+      "pair_count": 53100,
+      "support_pct": 0.5847902337608102,
+      "confidence_A_to_B_pct": 29.451078486292214,
+      "confidence_B_to_A_pct": 9.056518817433544,
+      "lift": 4.561024297370751
     },
     {
       "item_A": "Shorts",
       "item_B": "Vest top",
-      "pair_count": 15126,
-      "support_pct": 1.669272951399503,
-      "confidence_A_to_B_pct": 23.94187850201019,
-      "confidence_B_to_A_pct": 18.230466066456955,
-      "lift": 2.61474076622519
+      "pair_count": 148699,
+      "support_pct": 1.6376219015065672,
+      "confidence_A_to_B_pct": 23.767160180868185,
+      "confidence_B_to_A_pct": 17.884771742111162,
+      "lift": 2.5956555319757753
     },
     {
       "item_A": "Socks",
       "item_B": "Underwear bottom",
-      "pair_count": 5680,
-      "support_pct": 0.6268326301698518,
-      "confidence_A_to_B_pct": 17.285453438831407,
-      "confidence_B_to_A_pct": 8.971017926241807,
-      "lift": 2.473836000224751
+      "pair_count": 56096,
+      "support_pct": 0.6177851780234729,
+      "confidence_A_to_B_pct": 17.02882052589719,
+      "confidence_B_to_A_pct": 8.8851015840684,
+      "lift": 2.4491167093639277
     },
     {
       "item_A": "Dress",
       "item_B": "Jumpsuit/Playsuit",
-      "pair_count": 6438,
-      "support_pct": 0.7104838860974483,
-      "confidence_A_to_B_pct": 3.7001275906065723,
-      "confidence_B_to_A_pct": 38.84631629759247,
-      "lift": 2.0230765192391305
+      "pair_count": 64290,
+      "support_pct": 0.7080256898019301,
+      "confidence_A_to_B_pct": 3.668237083714431,
+      "confidence_B_to_A_pct": 38.30616330616331,
+      "lift": 1.9846185074696734
     },
     {
       "item_A": "Blouse",
       "item_B": "Shirt",
-      "pair_count": 12259,
-      "support_pct": 1.352876974164122,
-      "confidence_A_to_B_pct": 12.38095238095238,
-      "confidence_B_to_A_pct": 21.709256406169754,
-      "lift": 1.986738446463251
+      "pair_count": 121099,
+      "support_pct": 1.3336631359359765,
+      "confidence_A_to_B_pct": 12.280899241032131,
+      "confidence_B_to_A_pct": 21.519108806559206,
+      "lift": 1.981564908628077
     },
     {
       "item_A": "Shorts",
       "item_B": "T-shirt",
-      "pair_count": 17402,
-      "support_pct": 1.920447434897141,
-      "confidence_A_to_B_pct": 27.544398366519996,
-      "confidence_B_to_A_pct": 13.826583716698845,
-      "lift": 1.983105202570617
-    },
-    {
-      "item_A": "Cardigan",
-      "item_B": "Sweater",
-      "pair_count": 10247,
-      "support_pct": 1.1308369650264913,
-      "confidence_A_to_B_pct": 36.07971550297525,
-      "confidence_B_to_A_pct": 6.071612677683698,
-      "lift": 1.9371674682561668
+      "pair_count": 171197,
+      "support_pct": 1.8853923474416088,
+      "confidence_A_to_B_pct": 27.363106150573245,
+      "confidence_B_to_A_pct": 13.62832703781688,
+      "lift": 1.9779085233720035
     },
     {
       "item_A": "Shorts",
       "item_B": "Swimwear bottom",
-      "pair_count": 7838,
-      "support_pct": 0.8649848864914258,
-      "confidence_A_to_B_pct": 12.406217354142267,
-      "confidence_B_to_A_pct": 13.245906072026095,
-      "lift": 1.8998203592744218
+      "pair_count": 76941,
+      "support_pct": 0.8473511370205368,
+      "confidence_A_to_B_pct": 12.297789974890074,
+      "confidence_B_to_A_pct": 13.122742266142264,
+      "lift": 1.9045319140194807
+    },
+    {
+      "item_A": "Cardigan",
+      "item_B": "Sweater",
+      "pair_count": 101126,
+      "support_pct": 1.113700511851143,
+      "confidence_A_to_B_pct": 35.405659947973014,
+      "confidence_B_to_A_pct": 5.980743526962611,
+      "lift": 1.9013385492632486
     },
     {
       "item_A": "Bra",
       "item_B": "Leggings/Tights",
-      "pair_count": 8654,
-      "support_pct": 0.9550368981496298,
-      "confidence_A_to_B_pct": 10.651208014867874,
-      "confidence_B_to_A_pct": 16.997957259585164,
-      "lift": 1.8957254840148532
+      "pair_count": 85962,
+      "support_pct": 0.9466993987673591,
+      "confidence_A_to_B_pct": 10.663858103028632,
+      "confidence_B_to_A_pct": 16.811551120906973,
+      "lift": 1.8936950406706554
     },
     {
       "item_A": "T-shirt",
       "item_B": "Vest top",
-      "pair_count": 21582,
-      "support_pct": 2.381743278930588,
-      "confidence_A_to_B_pct": 17.147760589230803,
-      "confidence_B_to_A_pct": 26.01149799327476,
-      "lift": 1.8727414667302273
+      "pair_count": 215404,
+      "support_pct": 2.372243983295924,
+      "confidence_A_to_B_pct": 17.147474297177563,
+      "confidence_B_to_A_pct": 25.907715400491682,
+      "lift": 1.8727073903726055
     },
     {
       "item_A": "Top",
       "item_B": "Vest top",
-      "pair_count": 18701,
-      "support_pct": 2.0638022916912675,
-      "confidence_A_to_B_pct": 16.883492077822417,
-      "confidence_B_to_A_pct": 22.53920044352846,
-      "lift": 1.8438801704058334
-    },
-    {
-      "item_A": "Bikini top",
-      "item_B": "Shorts",
-      "pair_count": 7280,
-      "support_pct": 0.8034052020486833,
-      "confidence_A_to_B_pct": 12.167605421938461,
-      "confidence_B_to_A_pct": 11.522998512140301,
-      "lift": 1.7451629491043692
+      "pair_count": 186333,
+      "support_pct": 2.052085096560321,
+      "confidence_A_to_B_pct": 16.893597345373443,
+      "confidence_B_to_A_pct": 22.411200969897575,
+      "lift": 1.8449810188003732
     },
     {
       "item_A": "Leggings/Tights",
       "item_B": "Vest top",
-      "pair_count": 8128,
-      "support_pct": 0.896988665144464,
-      "confidence_A_to_B_pct": 15.964802011313639,
-      "confidence_B_to_A_pct": 9.796193850863554,
-      "lift": 1.7435481781511342
+      "pair_count": 83149,
+      "support_pct": 0.9157198332764145,
+      "confidence_A_to_B_pct": 16.261413928855703,
+      "confidence_B_to_A_pct": 10.000745704979865,
+      "lift": 1.775939098359726
+    },
+    {
+      "item_A": "Bikini top",
+      "item_B": "Shorts",
+      "pair_count": 71381,
+      "support_pct": 0.7861188639563162,
+      "confidence_A_to_B_pct": 12.054282351312054,
+      "confidence_B_to_A_pct": 11.40911277729206,
+      "lift": 1.7494640200248754
     },
     {
       "item_A": "Skirt",
       "item_B": "Vest top",
-      "pair_count": 10077,
-      "support_pct": 1.1120761292643655,
-      "confidence_A_to_B_pct": 15.873540947970321,
-      "confidence_B_to_A_pct": 12.145207361608273,
-      "lift": 1.7335813736385812
-    },
-    {
-      "item_A": "T-shirt",
-      "item_B": "Top",
-      "pair_count": 26473,
-      "support_pct": 2.9215035595926913,
-      "confidence_A_to_B_pct": 21.033855346061863,
-      "confidence_B_to_A_pct": 23.900148964022932,
-      "lift": 1.7207313487876619
+      "pair_count": 100394,
+      "support_pct": 1.1056389967642708,
+      "confidence_A_to_B_pct": 15.862712970438922,
+      "confidence_B_to_A_pct": 12.074888023978023,
+      "lift": 1.7323962291047104
     },
     {
       "item_A": "Hoodie",
       "item_B": "Sweater",
-      "pair_count": 11653,
-      "support_pct": 1.2860001125650147,
-      "confidence_A_to_B_pct": 32.043667161634495,
-      "confidence_B_to_A_pct": 6.90470406294995,
-      "lift": 1.7204667144348171
+      "pair_count": 117845,
+      "support_pct": 1.297826837995154,
+      "confidence_A_to_B_pct": 32.05558895293327,
+      "confidence_B_to_A_pct": 6.969530298191453,
+      "lift": 1.7214345696453677
+    },
+    {
+      "item_A": "T-shirt",
+      "item_B": "Top",
+      "pair_count": 260369,
+      "support_pct": 2.8674434722046778,
+      "confidence_A_to_B_pct": 20.726962987139633,
+      "confidence_B_to_A_pct": 23.605958403597526,
+      "lift": 1.706327712647578
     },
     {
       "item_A": "Blouse",
       "item_B": "Top",
-      "pair_count": 20455,
-      "support_pct": 2.2573699736134363,
-      "confidence_A_to_B_pct": 20.65848608796647,
-      "confidence_B_to_A_pct": 18.467024782196546,
-      "lift": 1.690023252761089
+      "pair_count": 203041,
+      "support_pct": 2.236090279718054,
+      "confidence_A_to_B_pct": 20.59080638814858,
+      "confidence_B_to_A_pct": 18.408402690891947,
+      "lift": 1.6951187488325496
     }
   ]
 }

@@ -2,24 +2,24 @@
   "weekly_trend": {
     "n_weeks": 106,
     "peak_week": "2019-11-25 00:00:00",
-    "peak_index": 119.1,
+    "peak_index": 115.8,
     "trough_week": "2020-09-21 00:00:00",
-    "trough_index": 17.1
+    "trough_index": 17.8
   },
   "channel_split": {
     "channel_1": {
-      "revenue_pct": 24.3
+      "revenue_pct": 24.4
     },
     "channel_2": {
-      "revenue_pct": 75.7
+      "revenue_pct": 75.6
     }
   },
   "product_group_mix": {
     "Garment Upper body": 38.3,
     "Garment Lower body": 26.2,
     "Garment Full body": 14.5,
-    "Swimwear": 6.6,
-    "Underwear": 6.2,
+    "Swimwear": 6.5,
+    "Underwear": 6.1,
     "Shoes": 3.3,
     "Accessories": 2.8,
     "Nightwear": 1.0,
@@ -29,20 +29,20 @@
     "Items": 0.0,
     "Underwear/nightwear": 0.0,
     "Cosmetic": 0.0,
-    "Garment and Shoe care": 0.0,
     "Furniture": 0.0,
+    "Garment and Shoe care": 0.0,
     "Interior textile": 0.0,
     "Stationery": 0.0,
     "Fun": 0.0
   },
   "revenue_concentration": {
-    "top_10_pct_share": 51.3,
-    "top_20_pct_share": 69.7,
-    "gini": 0.664
+    "top_10_pct_share": 51.1,
+    "top_20_pct_share": 69.6,
+    "gini": 0.663
   },
   "seasonality": {
     "peak_month": "2019-06-01 00:00:00",
-    "peak_index": 132.4,
+    "peak_index": 131.5,
     "n_months": 25
   }
 }

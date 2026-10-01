@@ -1,27 +1,27 @@
 {
-  "n_target_customers": 1253,
-  "value_lost_index": 1.32,
+  "n_target_customers": 14271,
+  "value_lost_index": 1.57,
   "total_revenue_index": 100,
   "scenarios": [
     {
       "Assumed_Uplift_pp": 2,
-      "Customers_Saved": 25,
-      "Revenue_Recovered_Index": 0.04,
-      "Share_of_Total_Revenue_pct": 0.04,
+      "Customers_Saved": 285,
+      "Revenue_Recovered_Index": 0.05,
+      "Share_of_Total_Revenue_pct": 0.046,
       "Break_Even_Cost_pct_of_LTV": 2.0
     },
     {
       "Assumed_Uplift_pp": 5,
-      "Customers_Saved": 62,
-      "Revenue_Recovered_Index": 0.1,
-      "Share_of_Total_Revenue_pct": 0.1,
+      "Customers_Saved": 713,
+      "Revenue_Recovered_Index": 0.12,
+      "Share_of_Total_Revenue_pct": 0.116,
       "Break_Even_Cost_pct_of_LTV": 5.0
     },
     {
       "Assumed_Uplift_pp": 10,
-      "Customers_Saved": 125,
-      "Revenue_Recovered_Index": 0.2,
-      "Share_of_Total_Revenue_pct": 0.199,
+      "Customers_Saved": 1427,
+      "Revenue_Recovered_Index": 0.23,
+      "Share_of_Total_Revenue_pct": 0.231,
       "Break_Even_Cost_pct_of_LTV": 10.0
     }
   ],
@@ -36,7 +36,7 @@
     },
     {
       "Parameter": "Average value of retained target customer (Index)",
-      "Value": "0.0016"
+      "Value": "0.0002"
     },
     {
       "Parameter": "Test window duration",
